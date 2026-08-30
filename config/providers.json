@@ -1,0 +1,936 @@
+{
+  "generatedAt": "2026-08-30T01:09:47.464Z",
+  "total": 29,
+  "providers": [
+    {
+      "id": "nvidia-nim",
+      "name": "NVIDIA NIM",
+      "baseUrl": "https://integrate.api.nvidia.com/v1",
+      "apiKeyUrl": "https://build.nvidia.com/settings/api-keys",
+      "creditCard": "Phone verification",
+      "freeModels": 126,
+      "maxContext": "1M",
+      "modalities": [
+        "audio",
+        "embedding",
+        "image",
+        "reasoning",
+        "rerank",
+        "text",
+        "video",
+        "vision"
+      ],
+      "bestModels": [
+        {
+          "name": "z-ai/glm-5.2",
+          "id": "z-ai/glm-5.2",
+          "context": "1M",
+          "rateLimit": "Up to 40 RPM"
+        },
+        {
+          "name": "poolside/laguna-xs-2.1",
+          "id": "poolside/laguna-xs-2.1",
+          "context": "262K",
+          "rateLimit": "Up to 40 RPM"
+        },
+        {
+          "name": "z-ai/glm-5.1",
+          "id": "z-ai/glm-5.1",
+          "context": "202K",
+          "rateLimit": "Up to 40 RPM"
+        }
+      ],
+      "envPrefix": "NVIDIA_NIM"
+    },
+    {
+      "id": "modelscope",
+      "name": "ModelScope",
+      "baseUrl": "https://api-inference.modelscope.cn/v1",
+      "apiKeyUrl": "https://modelscope.cn/my/myaccesstoken",
+      "creditCard": "Registration",
+      "freeModels": 59,
+      "maxContext": "1M",
+      "modalities": [
+        "audio",
+        "image",
+        "reasoning",
+        "text",
+        "video",
+        "vision"
+      ],
+      "bestModels": [
+        {
+          "name": "MiniMax-M2.5-highspeed",
+          "id": "MiniMax/MiniMax-M2.5",
+          "context": "204K",
+          "rateLimit": "See provider"
+        },
+        {
+          "name": "Qwen/Qwen3.5-35B-A3B",
+          "id": "qwen-qwen3-5-35b-a3b",
+          "context": "131K",
+          "rateLimit": "2,000 RPD total"
+        },
+        {
+          "name": "Qwen/Qwen3.5-27B",
+          "id": "qwen-qwen3-5-27b",
+          "context": "131K",
+          "rateLimit": "2,000 RPD total"
+        }
+      ],
+      "envPrefix": "MODELSCOPE"
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare Workers AI",
+      "baseUrl": "https://api.cloudflare.com/client/v4/accounts/{account_id}/ai/run",
+      "apiKeyUrl": "https://dash.cloudflare.com/profile/api-tokens",
+      "creditCard": "No",
+      "freeModels": 40,
+      "maxContext": "10M",
+      "modalities": [
+        "code",
+        "image",
+        "reasoning",
+        "text",
+        "video"
+      ],
+      "bestModels": [
+        {
+          "name": "Mistral 7B",
+          "id": "@cf/mistral/mistral-7b-instruct-v0.1",
+          "context": "32K",
+          "rateLimit": "See provider"
+        },
+        {
+          "name": "Qwen 1.5 7B",
+          "id": "@cf/qwen/qwen1.5-7b-chat",
+          "context": "32K",
+          "rateLimit": "See provider"
+        },
+        {
+          "name": "Llama 3.3 70B",
+          "id": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+          "context": "131K",
+          "rateLimit": "10K neurons/day"
+        }
+      ],
+      "envPrefix": "CLOUDFLARE"
+    },
+    {
+      "id": "google-gemini",
+      "name": "Google Gemini",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+      "apiKeyUrl": "https://aistudio.google.com/app/apikey",
+      "creditCard": "No",
+      "freeModels": 17,
+      "maxContext": "1M",
+      "modalities": [
+        "audio",
+        "image",
+        "pdf",
+        "reasoning",
+        "text",
+        "video",
+        "vision"
+      ],
+      "bestModels": [
+        {
+          "name": "Gemini 3.6 Flash",
+          "id": "gemini-3.6-flash",
+          "context": "1M",
+          "rateLimit": "15 RPM, 1,500 RPD"
+        },
+        {
+          "name": "Gemini 3.5 Flash",
+          "id": "gemini-3.5-flash",
+          "context": "1M",
+          "rateLimit": "15 RPM, 1,500 RPD"
+        },
+        {
+          "name": "Gemini 3.5 Flash-Lite",
+          "id": "gemini-3.5-flash-lite",
+          "context": "1M",
+          "rateLimit": "30 RPM, 1,500 RPD"
+        }
+      ],
+      "envPrefix": "GOOGLE_GEMINI"
+    },
+    {
+      "id": "github-models",
+      "name": "GitHub Models",
+      "baseUrl": "https://models.github.ai/inference",
+      "apiKeyUrl": "https://github.com/marketplace/models",
+      "creditCard": "No",
+      "freeModels": 16,
+      "maxContext": "1M",
+      "modalities": [
+        "image",
+        "pdf",
+        "reasoning",
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "Phi-4",
+          "id": "Phi-4",
+          "context": "131K",
+          "rateLimit": "See provider"
+        },
+        {
+          "name": "Mistral Large (24.11)",
+          "id": "Mistral-large-2411",
+          "context": "131K",
+          "rateLimit": "See provider"
+        },
+        {
+          "name": "AI21 Jamba 1.5 Large",
+          "id": "AI21-Jamba-1.5-Large",
+          "context": "256K",
+          "rateLimit": "See provider"
+        }
+      ],
+      "envPrefix": "GITHUB_MODELS"
+    },
+    {
+      "id": "llm7",
+      "name": "LLM7.io",
+      "baseUrl": "https://api.llm7.io/v1",
+      "apiKeyUrl": "https://token.llm7.io",
+      "creditCard": "No",
+      "freeModels": 16,
+      "maxContext": "1M",
+      "modalities": [
+        "audio",
+        "code",
+        "image",
+        "pdf",
+        "reasoning",
+        "text",
+        "video",
+        "vision"
+      ],
+      "bestModels": [
+        {
+          "name": "deepseek-r1-0528",
+          "id": "deepseek-r1-0528",
+          "context": "131K",
+          "rateLimit": "30 RPM (120 with token)"
+        },
+        {
+          "name": "deepseek-v3.2",
+          "id": "deepseek-v3.2",
+          "context": "131K",
+          "rateLimit": "30 RPM (120 with token)"
+        },
+        {
+          "name": "gpt-4o-mini",
+          "id": "gpt-4o-mini",
+          "context": "131K",
+          "rateLimit": "30 RPM (120 with token)"
+        }
+      ],
+      "envPrefix": "LLM7"
+    },
+    {
+      "id": "groq",
+      "name": "Groq",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "apiKeyUrl": "https://console.groq.com/keys",
+      "creditCard": "No",
+      "freeModels": 12,
+      "maxContext": "262K",
+      "modalities": [
+        "image",
+        "reasoning",
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "Moonshot Kimi K2",
+          "id": "moonshotai/kimi-k2-instruct",
+          "context": "131K",
+          "rateLimit": "See provider"
+        },
+        {
+          "name": "Moonshot Kimi K2 0905",
+          "id": "moonshotai/kimi-k2-instruct-0905",
+          "context": "131K",
+          "rateLimit": "See provider"
+        },
+        {
+          "name": "groq/compound",
+          "id": "groq/compound",
+          "context": "131K",
+          "rateLimit": "30 RPM, 250 RPD"
+        }
+      ],
+      "envPrefix": "GROQ"
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "apiKeyUrl": "https://console.mistral.ai/api-keys",
+      "creditCard": "No",
+      "freeModels": 12,
+      "maxContext": "256K",
+      "modalities": [
+        "code",
+        "image",
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "Mistral 7B",
+          "id": "open-mistral-7b",
+          "context": "32K",
+          "rateLimit": "See provider"
+        },
+        {
+          "name": "Mixtral 8x7B",
+          "id": "open-mixtral-8x7b",
+          "context": "32K",
+          "rateLimit": "See provider"
+        },
+        {
+          "name": "Mistral Medium 3.5 (128B)",
+          "id": "mistral-medium-3-5-128b",
+          "context": "256K",
+          "rateLimit": "~1 RPS, 500K TPM"
+        }
+      ],
+      "envPrefix": "MISTRAL"
+    },
+    {
+      "id": "cohere",
+      "name": "Cohere",
+      "baseUrl": "https://api.cohere.com/v2",
+      "apiKeyUrl": "https://dashboard.cohere.com/api-keys",
+      "creditCard": "No",
+      "freeModels": 12,
+      "maxContext": "436K",
+      "modalities": [
+        "image",
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "Command A+ (218B)",
+          "id": "command-a-218b",
+          "context": "436K",
+          "rateLimit": "20 RPM"
+        },
+        {
+          "name": "Command A (111B)",
+          "id": "command-a-111b",
+          "context": "288K",
+          "rateLimit": "20 RPM"
+        },
+        {
+          "name": "Command R+",
+          "id": "command-r",
+          "context": "128K",
+          "rateLimit": "20 RPM"
+        }
+      ],
+      "envPrefix": "COHERE"
+    },
+    {
+      "id": "kilo-code",
+      "name": "Kilo Code",
+      "baseUrl": "https://api.kilo.ai/api/gateway",
+      "apiKeyUrl": "https://kilo.ai",
+      "creditCard": "No",
+      "freeModels": 12,
+      "maxContext": "1M",
+      "modalities": [
+        "audio",
+        "code",
+        "image",
+        "reasoning",
+        "text",
+        "video"
+      ],
+      "bestModels": [
+        {
+          "name": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "context": "1M",
+          "rateLimit": "~200 req/hr"
+        },
+        {
+          "name": "stepfun/step-3.7-flash:free",
+          "id": "stepfun/step-3.7-flash:free",
+          "context": "262K",
+          "rateLimit": "~200 req/hr"
+        },
+        {
+          "name": "nvidia/nemotron-3-super-120b-a12b:free",
+          "id": "nvidia/nemotron-3-super-120b-a12b:free",
+          "context": "262K",
+          "rateLimit": "~200 req/hr"
+        }
+      ],
+      "envPrefix": "KILO_CODE"
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "baseUrl": "https://router.huggingface.co/v1",
+      "apiKeyUrl": "https://huggingface.co/settings/tokens",
+      "creditCard": "No",
+      "freeModels": 7,
+      "maxContext": "131K",
+      "modalities": [
+        "code",
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "Meta-Llama-3.1-8B-Instruct",
+          "id": "meta-llama-3-1-8b-instruct",
+          "context": "128K",
+          "rateLimit": "Credit-metered"
+        },
+        {
+          "name": "gemma-3-4b-it",
+          "id": "gemma-3-4b-it",
+          "context": "131K",
+          "rateLimit": "Credit-metered"
+        },
+        {
+          "name": "Qwen2.5-Coder-7B-Instruct",
+          "id": "qwen2-5-coder-7b-instruct",
+          "context": "131K",
+          "rateLimit": "Credit-metered"
+        }
+      ],
+      "envPrefix": "HUGGINGFACE"
+    },
+    {
+      "id": "cerebras",
+      "name": "Cerebras",
+      "baseUrl": "https://api.cerebras.ai/v1",
+      "apiKeyUrl": "https://cloud.cerebras.ai/",
+      "creditCard": "No",
+      "freeModels": 6,
+      "maxContext": "131K",
+      "modalities": [
+        "reasoning",
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "Llama 3.1 70B",
+          "id": "llama3.1-70b",
+          "context": "131K",
+          "rateLimit": "See provider"
+        },
+        {
+          "name": "zai-glm-4.7",
+          "id": "zai-glm-4.7",
+          "context": "128K",
+          "rateLimit": "10 RPM, 100 RPD, 1M TPD"
+        }
+      ],
+      "envPrefix": "CEREBRAS"
+    },
+    {
+      "id": "zhipu",
+      "name": "Z AI (Zhipu AI)",
+      "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+      "apiKeyUrl": "https://open.bigmodel.cn/usercenter/apikeys",
+      "creditCard": "No",
+      "freeModels": 4,
+      "maxContext": "200K",
+      "modalities": [
+        "image",
+        "reasoning",
+        "text",
+        "video"
+      ],
+      "bestModels": [
+        {
+          "name": "GLM-4.7-Flash",
+          "id": "glm-4.7",
+          "context": "200K",
+          "rateLimit": "1 concurrent request"
+        },
+        {
+          "name": "GLM-4.5-Flash",
+          "id": "glm-4.5",
+          "context": "128K",
+          "rateLimit": "1 concurrent request"
+        },
+        {
+          "name": "GLM-4.6V-Flash",
+          "id": "glm-4.6",
+          "context": "128K",
+          "rateLimit": "1 concurrent request"
+        }
+      ],
+      "envPrefix": "ZHIPU"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "baseUrl": "https://api.deepseek.com/v1",
+      "apiKeyUrl": "https://platform.deepseek.com/api_keys",
+      "creditCard": "Registration",
+      "freeModels": 2,
+      "maxContext": "128K",
+      "modalities": [
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "deepseek-chat (V3.2)",
+          "id": "deepseek-chat-v3-2",
+          "context": "128K",
+          "rateLimit": "Dynamic"
+        },
+        {
+          "name": "deepseek-reasoner (R1)",
+          "id": "deepseek-reasoner-r1",
+          "context": "128K",
+          "rateLimit": "Dynamic"
+        }
+      ],
+      "envPrefix": "DEEPSEEK"
+    },
+    {
+      "id": "siliconflow",
+      "name": "SiliconFlow",
+      "baseUrl": "https://api.siliconflow.cn/v1",
+      "apiKeyUrl": "https://cloud.siliconflow.cn/account/ak",
+      "creditCard": "Registration",
+      "freeModels": 3,
+      "maxContext": "131K",
+      "modalities": [
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "DeepSeek-R1-Distill-Qwen-7B",
+          "id": "deepseek-ai-deepseek-r1-distill-qwen-7b",
+          "context": "131K",
+          "rateLimit": "30 RPM, 60K TPM"
+        },
+        {
+          "name": "DeepSeek-OCR",
+          "id": "deepseek-ai-deepseek-ocr",
+          "context": "131K",
+          "rateLimit": "30 RPM, 60K TPM"
+        }
+      ],
+      "envPrefix": "SILICONFLOW"
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "apiKeyUrl": "https://openrouter.ai/workspaces/default/keys",
+      "creditCard": "Free tier + $10 topup",
+      "freeModels": 29,
+      "maxContext": "1M",
+      "modalities": [
+        "audio",
+        "code",
+        "embeddings",
+        "image",
+        "reasoning",
+        "rerank",
+        "speech",
+        "text",
+        "video"
+      ],
+      "bestModels": [
+        {
+          "name": "NVIDIA: Nemotron 3 Ultra (free)",
+          "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "context": "1M",
+          "rateLimit": "See provider"
+        },
+        {
+          "name": "Poolside: Laguna M.1 (free)",
+          "id": "poolside/laguna-m.1:free",
+          "context": "262K",
+          "rateLimit": "See provider"
+        },
+        {
+          "name": "NVIDIA: Nemotron 3 Super (free)",
+          "id": "nvidia/nemotron-3-super-120b-a12b:free",
+          "context": "262K",
+          "rateLimit": "See provider"
+        }
+      ],
+      "envPrefix": "OPENROUTER"
+    },
+    {
+      "id": "ovhcloud",
+      "name": "OVHcloud AI Endpoints",
+      "baseUrl": "https://oai.endpoints.kepler.ai.cloud.ovh.net/v1",
+      "apiKeyUrl": "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/",
+      "creditCard": "Registration",
+      "freeModels": 14,
+      "maxContext": "262K",
+      "modalities": [
+        "audio",
+        "code",
+        "image",
+        "reasoning",
+        "text",
+        "video"
+      ],
+      "bestModels": [
+        {
+          "name": "Qwen3.5-397B-A17B",
+          "id": "qwen3.5-397b-a17b",
+          "context": "131K",
+          "rateLimit": "2 RPM (anonymous)"
+        },
+        {
+          "name": "Meta-Llama-3_3-70B-Instruct",
+          "id": "meta-llama-3_3-70b-instruct",
+          "context": "131K",
+          "rateLimit": "2 RPM (anonymous)"
+        }
+      ],
+      "envPrefix": "OVHCLOUD"
+    },
+    {
+      "id": "ollama-cloud",
+      "name": "Ollama Cloud",
+      "baseUrl": "https://api.ollama.com",
+      "apiKeyUrl": "https://ollama.com/settings/keys",
+      "creditCard": "Registration",
+      "freeModels": 13,
+      "maxContext": "1M",
+      "modalities": [
+        "code",
+        "image",
+        "reasoning",
+        "text",
+        "video",
+        "vision"
+      ],
+      "bestModels": [
+        {
+          "name": "minimax-m3",
+          "id": "minimax-m3",
+          "context": "1M",
+          "rateLimit": "Session/weekly limits"
+        },
+        {
+          "name": "gpt-oss:20b",
+          "id": "gpt-oss:20b",
+          "context": "131K",
+          "rateLimit": "Session/weekly limits"
+        }
+      ],
+      "envPrefix": "OLLAMA"
+    },
+    {
+      "id": "opencode-zen",
+      "name": "OpenCode Zen",
+      "baseUrl": "https://opencode.ai/zen/v1",
+      "apiKeyUrl": "https://opencode.ai/auth",
+      "creditCard": "Registration",
+      "freeModels": 12,
+      "maxContext": "1M",
+      "modalities": [
+        "audio",
+        "reasoning",
+        "vision"
+      ],
+      "bestModels": [
+        {
+          "name": "DeepSeek V4 Flash",
+          "id": "deepseek-v4-flash-free",
+          "context": "1M",
+          "rateLimit": "See provider"
+        },
+        {
+          "name": "MiMo-V2.5",
+          "id": "mimo-v2.5-free",
+          "context": "1M",
+          "rateLimit": "See provider"
+        }
+      ],
+      "envPrefix": "OPENCODE"
+    },
+    {
+      "id": "aion-labs",
+      "name": "Aion Labs",
+      "baseUrl": "https://api.aionlabs.ai/v1",
+      "apiKeyUrl": "https://www.aionlabs.ai",
+      "creditCard": "Registration",
+      "freeModels": 7,
+      "maxContext": "131K",
+      "modalities": [
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "Aion 2.5",
+          "id": "aion-2-5",
+          "context": "128K",
+          "rateLimit": "15 RPM, 20K TPD"
+        },
+        {
+          "name": "Aion 2.0",
+          "id": "aion-2-0",
+          "context": "128K",
+          "rateLimit": "15 RPM, 20K TPD"
+        }
+      ],
+      "envPrefix": "AION"
+    },
+    {
+      "id": "agnes-ai",
+      "name": "Agnes AI",
+      "baseUrl": "https://apihub.agnes-ai.com/v1",
+      "apiKeyUrl": "https://platform.agnes-ai.com/settings/apiKeys",
+      "creditCard": "Registration",
+      "freeModels": 5,
+      "maxContext": "256K",
+      "modalities": [
+        "image",
+        "text",
+        "video",
+        "vision"
+      ],
+      "bestModels": [
+        {
+          "name": "agnes-1.5-flash",
+          "id": "agnes-1.5-flash",
+          "context": "256K",
+          "rateLimit": "30 RPM"
+        },
+        {
+          "name": "agnes-2.0-flash",
+          "id": "agnes-2.0-flash",
+          "context": "256K",
+          "rateLimit": "30 RPM"
+        }
+      ],
+      "envPrefix": "AGNES"
+    },
+    {
+      "id": "alibaba",
+      "name": "Alibaba Cloud Model Studio",
+      "baseUrl": "https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+      "apiKeyUrl": "https://bailian.console.alibabacloud.com/?apiKey=1",
+      "creditCard": "Registration",
+      "freeModels": 5,
+      "maxContext": "1M",
+      "modalities": [
+        "code",
+        "image",
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "Qwen3-Max",
+          "id": "qwen3-max",
+          "context": "128K",
+          "rateLimit": "Tiered by region"
+        },
+        {
+          "name": "Qwen3-Plus",
+          "id": "qwen3-plus",
+          "context": "1M",
+          "rateLimit": "Tiered by region"
+        }
+      ],
+      "envPrefix": "ALIBABA"
+    },
+    {
+      "id": "sambanova",
+      "name": "SambaNova",
+      "baseUrl": "https://api.sambanova.ai/v1",
+      "apiKeyUrl": "https://cloud.sambanova.ai/apis",
+      "creditCard": "Registration",
+      "freeModels": 4,
+      "maxContext": "128K",
+      "modalities": [
+        "image",
+        "reasoning",
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "DeepSeek-V3.1",
+          "id": "deepseek-v3-1",
+          "context": "128K",
+          "rateLimit": "20 RPM, 20 RPD, 200K TPD"
+        },
+        {
+          "name": "DeepSeek-V3.2 (Preview)",
+          "id": "deepseek-v3-2-preview",
+          "context": "128K",
+          "rateLimit": "20 RPM, 20 RPD, 200K TPD"
+        }
+      ],
+      "envPrefix": "SAMBANOVA"
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "baseUrl": "https://api.x.ai/v1",
+      "apiKeyUrl": "https://console.x.ai",
+      "creditCard": "Registration",
+      "freeModels": 3,
+      "maxContext": "2M",
+      "modalities": [
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "grok-4.3",
+          "id": "grok-4-3",
+          "context": "1M",
+          "rateLimit": "Credit-based"
+        },
+        {
+          "name": "grok-4.1-fast",
+          "id": "grok-4-1-fast",
+          "context": "2M",
+          "rateLimit": "Credit-based"
+        }
+      ],
+      "envPrefix": "XAI"
+    },
+    {
+      "id": "chutes",
+      "name": "Chutes.ai",
+      "baseUrl": "https://api.chutes.ai/v1",
+      "apiKeyUrl": "https://chutes.ai/",
+      "creditCard": "Registration",
+      "freeModels": 2,
+      "maxContext": "131K",
+      "modalities": [
+        "reasoning",
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "DeepSeek-R1",
+          "id": "deepseek-ai/DeepSeek-R1",
+          "context": "131K",
+          "rateLimit": "Community-powered"
+        },
+        {
+          "name": "Llama 3.1 70B",
+          "id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+          "context": "131K",
+          "rateLimit": "Community-powered"
+        }
+      ],
+      "envPrefix": "CHUTES"
+    },
+    {
+      "id": "glhf",
+      "name": "Glhf.chat",
+      "baseUrl": "https://glhf.chat/api/openai/v1",
+      "apiKeyUrl": "https://glhf.chat/",
+      "creditCard": "Registration",
+      "freeModels": 2,
+      "maxContext": "131K",
+      "modalities": [
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "Llama 3.1 70B",
+          "id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+          "context": "131K",
+          "rateLimit": "Unlimited for free models"
+        },
+        {
+          "name": "Mixtral 8x7B",
+          "id": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+          "context": "32K",
+          "rateLimit": "Unlimited for free models"
+        }
+      ],
+      "envPrefix": "GLHF"
+    },
+    {
+      "id": "ai21",
+      "name": "AI21 Labs",
+      "baseUrl": "https://api.ai21.com/studio/v1",
+      "apiKeyUrl": "https://studio.ai21.com/account/api-key",
+      "creditCard": "Registration",
+      "freeModels": 2,
+      "maxContext": "256K",
+      "modalities": [
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "Jamba Large 1.7",
+          "id": "jamba-large-1-7",
+          "context": "256K",
+          "rateLimit": "200 RPM, 10 RPS"
+        },
+        {
+          "name": "Jamba Mini 2",
+          "id": "jamba-mini-2",
+          "context": "256K",
+          "rateLimit": "200 RPM, 10 RPS"
+        }
+      ],
+      "envPrefix": "AI21"
+    },
+    {
+      "id": "nscale",
+      "name": "Nscale",
+      "baseUrl": "https://inference.api.nscale.com/v1",
+      "apiKeyUrl": "https://console.nscale.com/",
+      "creditCard": "Registration",
+      "freeModels": 2,
+      "maxContext": "128K",
+      "modalities": [
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "Llama-3.3-70B-Instruct",
+          "id": "llama-3-3-70b-instruct",
+          "context": "128K",
+          "rateLimit": "Fair-use"
+        },
+        {
+          "name": "DeepSeek-R1-Distill-Llama-70B",
+          "id": "deepseek-r1-distill-llama-70b",
+          "context": "128K",
+          "rateLimit": "Fair-use"
+        }
+      ],
+      "envPrefix": "NSCALE"
+    },
+    {
+      "id": "nebius",
+      "name": "Nebius",
+      "baseUrl": "https://api.studio.nebius.com/v1",
+      "apiKeyUrl": "https://studio.nebius.com/settings/api-keys",
+      "creditCard": "Registration",
+      "freeModels": 1,
+      "maxContext": "128K",
+      "modalities": [
+        "text"
+      ],
+      "bestModels": [
+        {
+          "name": "Qwen3-235B-A22B",
+          "id": "qwen3-235b-a22b",
+          "context": "128K",
+          "rateLimit": "Tier-based"
+        }
+      ],
+      "envPrefix": "NEBIUS"
+    }
+  ]
+}
